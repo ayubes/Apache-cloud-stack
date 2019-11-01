@@ -1,5 +1,3 @@
-
-
 import CloudStack
 import json,ast
 import time
