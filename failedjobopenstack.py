@@ -36,8 +36,8 @@ x = json.dumps(listasync)
 for state in listasync:
     accountid = state ['accountid']
     status = state['jobstatus']
-   # Remove Status was 0 or Pendding for id 45b73d1e-8be6-11e7-90f0-005056a86dbb
-    if status != '0' and accountid !='45b73d1e-8be6-11e7-90f0-005056a86dbb' :
+   # Remove Status was 0 or Pendding for id 
+    if status != '0' and accountid !='id' :
         data.append(state['jobstatus'])
 
 output = {'pending':data.count(0),'error':data.count(2)}
